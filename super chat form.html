@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Chat Form</title>
+</head>
+<body>
+    <form action=""><!--action is used for giving location of server-->
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p><b>Required Fields are followed by *</b></p>
+        <p>Name: *<input type="" name="name" required></p>
+        <fieldset> <!-- it is used to get options in line-->
+            <legend>Gender *</legend> <!--name of the group-->
+            <p>
+                Male <input type="radio" name="gender" id="" required> <!-- kepping name same results to choose any one with same as in radio -->
+                Female <input type="radio" name="gender" id="" required>
+           </p>
+        </fieldset>
+        <p>Nationality: * <input type= "checkbox" id="nationality"></p> <!--not enough data to complete data: 1)format for options 2) how to restrict selection to only 1-->
+        <p>Address: * <textarea name="address" id="address" cols="30" rows="10" required></textarea></p>
+        <p>Email: <input type="email" name="email" id="emails"></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+        <h2>Payment Info</h2>
+        <p>Card Type
+           <select name="card_type" id="card_type">
+               <option value="">--Select a Card Type</option>  <!-- we have left value as empty because its what will be sent to server if not filled will be sent empty -->
+               <option value="visa">Visa</option>
+               <option value="Rupay">Rupay</option>
+               <option value="Master Card">Master Card</option>
+           </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+            CVV <input type="password" name="cvv" id="cvv" >
+        </p>
+        <input type="submit" value="Pay Now">  <!-- Used for BUTTON -->
+        <button type="reset">reset</button> <!-- We can use <button  > too-->
+
+    </form>
+    <br>
+
+</body>
+<button type="button" name="button"><a href="D:\Programming\Angelina Yu Web Dev\index.html">Home</a></button>
+</html>
